@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cedar Park Handyman Services | Home Repairs | Project Pros</title>
+    <meta name="description" content="Professional handyman services in Georgetown, TX. Family-focused repairs. Licensed and insured.">
+</head>
+<body>
+    <h1>Cedar Park Handyman Services</h1>
+    <p>Family-focused handyman services for Georgetown residents.</p>
+    <p><strong>Call Project Pros:</strong> <a href="tel:5122227780">(512) 222-7780</a></p>
+    <p><a href="../">← Back to Main Site</a></p>
+</body>
+</html>

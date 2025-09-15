@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Handyman Services North Austin | Round Rock, Cedar Park, Georgetown | Austin Handyman Pros</title>
+    <meta name="description" content="Professional handyman services in Round Rock, Cedar Park, Georgetown & Leander. Licensed, insured, same-day service. Free estimates on all home repairs. Call (512) 555-0123">
+    <meta name="keywords" content="handyman Round Rock, handyman Cedar Park, handyman Georgetown, handyman Leander, home repair Austin, emergency handyman">
+    
+    <!-- Local Business Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Austin Handyman Pros",
+        "image": "https://example.com/logo.jpg",
+        "telephone": "(512) 555-0123",
+        "email": "info@austinhandymanpros.com",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "123 Main Street",
+            "addressLocality": "Round Rock",
+            "addressRegion": "TX",
+            "postalCode": "78664",
+            "addressCountry": "US"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 30.5082,
+            "longitude": -97.6789
+        },
+        "url": "https://austinhandymanpros.com",
+        "sameAs": [
+            "https://www.facebook.com/austinhandymanpros",
+            "https://www.instagram.com/austinhandymanpros"
+        ],
+        "priceRange": "$$",
+        "openingHours": "Mo-Fr 07:00-19:00, Sa 08:00-17:00, Su 09:00-15:00",
+        "serviceArea": [
+            {
+                "@type": "City",
+                "name": "Round Rock, TX"
+            },
+            {
+                "@type": "City", 
+                "name": "Cedar Park, TX"
+            },
+            {
+                "@type": "City",
+                "name": "Georgetown, TX"
+            },
+            {
+                "@type": "City",
+                "name": "Leander, TX"
+            }
+        ],
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Handyman Services",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Electrical Repairs"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Plumbing Repairs"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "TV Mounting"
+                    }
+                }
+            ]
+        }
+    }
+    </script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background: #2c3e50;
+            color: white;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #3498db;
+        }
+
+        .contact-info {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .phone {
+            background: #e74c3c;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .phone:hover {
+            background: #c0392b;
+        }
+
+        /* Navigation */
+        nav {
+            background: #34495e;
+            padding: 0.5rem 0;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 3px;
+            transition: background 0.3s;
+        }
+
+        nav a:hover {
+            background: #3498db;
+        }
+
+        /* Main Content */
+        main {
+            margin-top: 120px;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(52, 73, 94, 0.8), rgba(52, 73, 94, 0.8)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect width="1200" height="800" fill="%23f8f9fa"/><g fill="%2334495e" opacity="0.1"><rect x="100" y="100" width="1000" height="600" rx="10"/><circle cx="300" cy="200" r="50"/><rect x="500" y="150" width="200" height="100" rx="5"/><polygon points="800,180 850,120 900,180"/></g></svg>');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 30px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: all 0.3s;
+            display: inline-block;
+        }
+
+        .btn-primary {
+            background: #e74c3c;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #c0392b;
+            transform: translateY(-2px);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+
+        .btn-secondary:hover {
+            background: white;
+            color: #2c3e50;
+        }
+
+        /* Service Areas */
+        .service-areas {
+            padding: 60px 0;
+            background: #ecf0f1;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 50px;
+            color: #2c3e50;
+        }
+
+        .areas-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .area-card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .area-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .area-card h3 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+
+        .area-card p {
+            margin-bottom: 20px;
+            color: #666;
+        }
+
+        /* Services Section */
+        .services {
+            padding: 60px 0;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .service-item {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            border-left: 4px solid #3498db;
+        }
+
+        .service-icon {
+            font-size: 3rem;
+            color: #3498db;
+            margin-bottom: 20px;
+        }
+
+        .service-item h3 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+
+        /* Why Choose Us */
+        .why-choose {
+            padding: 60px 0;
+            background: #2c3e50;
+            color: white;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .feature {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .feature-icon {
+            font-size: 2.5rem;
+            color: #3498db;
+            margin-bottom: 20px;
+        }
+
+        /* Emergency Banner */
+        .emergency-banner {
+            background: #e74c3c;
+            color: white;
+            text-align: center;
+            padding: 40px 0;
+        }
+
+        .emergency-banner h2 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 60px 0;
+            background: #ecf0f1;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: start;
+        }
+
+        .contact-form {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .form-group textarea {
+            height: 120px;
+            resize: vertical;
+        }
+
+        .contact-info-section {
+            padding: 20px;
+        }
+
+        .contact-info-section h3 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            gap: 15px;
+        }
+
+        .contact-item i {
+            color: #3498db;
+            font-size: 1.2rem;
+            width: 20px;
+        }
+
+        /* Footer */
+        footer {
+            background: #2c3e50;
+            color: white;
+            padding: 40px 0 20px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+
+        .footer-section h3 {
+            color: #3498db;
+            margin-bottom: 20px;
+        }
+
+        .footer-section a {
+            color: #bdc3c7;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .footer-section a:hover {
+            color: #3498db;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid #34495e;
+            color: #bdc3c7;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1.1rem;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            nav ul {
+                justify-content: center;
+                gap: 15px;
+            }
+
+            main {
+                margin-top: 140px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 15px;
+            }
+
+            .hero {
+                padding: 40px 0;
+            }
+
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+        }
+
+        /* Accessibility */
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+
+        /* Focus styles for keyboard navigation */
+        a:focus,
+        button:focus,
+        input:focus,
+        textarea:focus,
+        select:focus {
+            outline: 2px solid #3498db;
+            outline-offset: 2px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">Austin Handyman Pros</div>
+                <div class="contact-info">
+                    <span>📍 Serving North Austin | Licensed & Insured</span>
+                    <a href="tel:5125550123" class="phone">📞 (512) 555-0123</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <div class="nav-container">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#areas">Service Areas</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#emergency">Emergency</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="container">
+                <h1>Professional Handyman Services in Round Rock, Cedar Park & Georgetown</h1>
+                <p>Licensed, insured, and trusted by North Austin families. Same-day service available for all your home repair needs. Free estimates on every job!</p>
+                <div class="cta-buttons">
+                    <a href="tel:5125550123" class="btn btn-primary">📞 Call Now: (512) 555-0123</a>
+                    <a href="#contact" class="btn btn-secondary">Get Free Estimate</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Service Areas -->
+        <section class="service-areas" id="areas">
+            <div class="container">
+                <h2 class="section-title">Serving North Austin's Premier Communities</h2>
+                <div class="areas-grid">
+                    <div class="area-card">
+                        <h3>Round Rock Handyman Services</h3>
+                        <p>Professional home repairs for Round Rock's growing tech community. From Dell headquarters to new neighborhoods, we keep your home in perfect condition.</p>
+                        <a href="/round-rock-handyman-services/" class="btn btn-primary">Learn More</a>
+                    </div>
+                    <div class="area-card">
+                        <h3>Cedar Park Home Repairs</h3>
+                        <p>Family-focused handyman services for Cedar Park residents. Specializing in family homes near the H-E-B Center and Brushy Creek area.</p>
+                        <a href="/cedar-park-handyman-services/" class="btn btn-primary">Learn More</a>
+                    </div>
+                    <div class="area-card">
+                        <h3>Georgetown Handyman</h3>
+                        <p>Expert care for Georgetown's historic homes and new developments. Preserving charm while adding modern convenience.</p>
+                        <a href="/georgetown-handyman-services/" class="btn btn-primary">Learn More</a>
+                    </div>
+                    <div class="area-card">
+                        <h3>Leander Home Services</h3>
+                        <p>Reliable handyman services for Leander's family-oriented community. Serving the Leander ISD area with quality craftsmanship.</p>
+                        <a href="/leander-handyman-services/" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services" id="services">
+            <div class="container">
+                <h2 class="section-title">Our Professional Handyman Services</h2>
+                <div class="services-grid">
+                    <div class="service-item">
+                        <div class="service-icon">⚡</div>
+                        <h3>Electrical Repairs</h3>
+                        <p>Light fixtures, ceiling fans, outlets, switches, and emergency electrical repairs. Licensed and code-compliant work.</p>
+                    </div>
+                    <div class="service-item">
+                        <div class="service-icon">🔧</div>
+                        <h3>Plumbing Repairs</h3>
+                        <p>Faucet repairs, toilet installation, drain cleaning, and minor plumbing fixes. Fast, reliable service.</p>
+                    </div>
+                    <div class="service-item">
+                        <div class="service-icon">📺</div>
+                        <h3>TV Mounting & Electronics</h3>
+                        <p>Professional TV mounting, home theater setup, and smart home device installation. Clean, secure installations.</p>
+                    </div>
+                    <div class="service-item">
+                        <div class="service-icon">🎨</div>
+                        <h3>Drywall & Painting</h3>
+                        <p>Hole repairs, texture matching, interior painting, and wall preparation. Quality finishes that last.</p>
+                    </div>
+                    <div class="service-item">
+                        <div class="service-icon">🚪</div>
+                        <h3>Door & Window Services</h3>
+                        <p>Installation, repair, weatherstripping, and hardware replacement. Improve security and energy efficiency.</p>
+                    </div>
+                    <div class="service-item">
+                        <div class="service-icon">🏡</div>
+                        <h3>Home Maintenance</h3>
+                        <p>Preventive maintenance, seasonal prep, and general repairs to keep your home in top condition.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us -->
+        <section class="why-choose" id="about">
+            <div class="container">
+                <h2 class="section-title">Why North Austin Families Choose Austin Handyman Pros</h2>
+                <div class="features-grid">
+                    <div class="feature">
+                        <div class="feature-icon">🛡️</div>
+                        <h3>Licensed & Insured</h3>
+                        <p>Fully licensed, bonded, and insured for your protection and peace of mind.</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">⏰</div>
+                        <h3>Same-Day Service</h3>
+                        <p>Emergency and same-day service available. We respect your time and schedule.</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">💯</div>
+                        <h3>100% Satisfaction Guarantee</h3>
+                        <p>We stand behind our work with a complete satisfaction guarantee on every job.</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">👨‍🔧</div>
+                        <h3>Experienced Professionals</h3>
+                        <p>Over 15 years serving North Austin with skilled, background-checked technicians.</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">📱</div>
+                        <h3>Easy Communication</h3>
+                        <p>Real-time updates, photo documentation, and transparent pricing throughout the process.</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">🏠</div>
+                        <h3>Local Community Focus</h3>
+                        <p>We live and work in North Austin. Your neighbors are our neighbors.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Emergency Banner -->
+        <section class="emergency-banner" id="emergency">
+            <div class="container">
+                <h2>🚨 Emergency Handyman Service Available 24/7</h2>
+                <p>Burst pipes, electrical issues, or security problems? We're here when you need us most.</p>
+                <a href="tel:5125550123" class="btn btn-secondary">Emergency Line: (512) 555-0123</a>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact" id="contact">
+            <div class="container">
+                <h2 class="section-title">Get Your Free Estimate Today</h2>
+                <div class="contact-grid">
+                    <div class="contact-form">
+                        <h3>Request Service</h3>
+                        <form action="#" method="POST">
+                            <div class="form-group">
+                                <label for="name">Full Name *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email">
+                            </div>
+                            <div class="form-group">
+                                <label for="location">Service Location *</label>
+                                <select id="location" name="location" required>
+                                    <option value="">Select Your City</option>
+                                    <option value="round-rock">Round Rock</option>
+                                    <option value="cedar-park">Cedar Park</option>
+                                    <option value="georgetown">Georgetown</option>
+                                    <option value="leander">Leander</option>
+                                    <option value="pflugerville">Pflugerville</option>
+                                    <option value="hutto">Hutto</option>
+                                    <option value="other">Other North Austin Area</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="service">Service Needed</label>
+                                <select id="service" name="service">
+                                    <option value="">Select Service Type</option>
+                                    <option value="electrical">Electrical Repairs</option>
+                                    <option value="plumbing">Plumbing Repairs</option>
+                                    <option value="tv-mounting">TV Mounting</option>
+                                    <option value="drywall-painting">Drywall & Painting</option>
+                                    <option value="doors-windows">Doors & Windows</option>
+                                    <option value="general-repair">General Repairs</option>
+                                    <option value="emergency">Emergency Service</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Describe Your Project *</label>
+                                <textarea id="message" name="message" placeholder="Please describe what you need help with..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary" style="width: 100%;">Get Free Estimate</button>
+                        </form>
+                    </div>
+                    
+                    <div class="contact-info-section">
+                        <h3>Contact Information</h3>
+                        <div class="contact-item">
+                            <i>📞</i>
+                            <div>
+                                <strong>Phone:</strong><br>
+                                <a href="tel:5122227780">(512) 222-7780</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i>✉️</i>
+                            <div>
+                                <strong>Email:</strong><br>
+                                <a href="mailto:info@austinhandymanpros.com">info@austinhandymanpros.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i>📍</i>
+                            <div>
+                                <strong>Service Area:</strong><br>
+                                Round Rock, Cedar Park, Georgetown, Leander & North Austin
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i>🕒</i>
+                            <div>
+                                <strong>Business Hours:</strong><br>
+                                Mon-Fri: 7:00 AM - 7:00 PM<br>
+                                Saturday: 8:00 AM - 5:00 PM<br>
+                                Sunday: 9:00 AM - 3:00 PM<br>
+                                <em>Emergency service available 24/7</em>
+                            </div>
+                        </div>
+                        
+                        <h3 style="margin-top: 30px;">Service Areas</h3>
+                        <p><strong>Primary Service Areas:</strong></p>
+                        <ul style="margin-left: 20px; margin-top: 10px;">
+                            <li><a href="/round-rock-handyman-services/">Round Rock Handyman Services</a></li>
+                            <li><a href="/cedar-park-handyman-services/">Cedar Park Home Repairs</a></li>
+                            <li><a href="/georgetown-handyman-services/">Georgetown Handyman</a></li>
+                            <li><a href="/leander-handyman-services/">Leander Home Services</a></li>
+                        </ul>
+                        
+                        <p style="margin-top: 15px;"><strong>Also Serving:</strong> Pflugerville, Hutto, Liberty Hill, Lago Vista, and surrounding North Austin communities.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <a href="/electrical-repairs/">Electrical Repairs</a>
+                    <a href="/plumbing-repairs/">Plumbing Repairs</a>
+                    <a href="/tv-mounting/">TV Mounting</a>
+                    <a href="/drywall-painting/">Drywall & Painting</a>
+                    <a href="/doors-windows/">Doors & Windows</a>
+                    <a href="/emergency-repairs/">Emergency Repairs</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Service Areas</h3>
+                    <a href="/round-rock-handyman-services/">Round Rock</a>
+                    <a href="/cedar-park-handyman-services/">Cedar Park</a>
+                    <a href="/georgetown-handyman-services/">Georgetown</a>
+                    <a href="/leander-handyman-services/">Leander</a>
+                    <a href="/pflugerville-handyman/">Pflugerville</a>
+                    <a href="/hutto-handyman/">Hutto</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Company</h3>
+                    <a href="/about/">About Us</a>
+                    <a href="/reviews/">Customer Reviews</a>
+                    <a href="/gallery/">Photo Gallery</a>
+                    <a href="/blog/">Handyman Tips Blog</a>
+                    <a href="/careers/">Careers</a>
+                    <a href="/contact/">Contact</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect With Us</h3>
+                    <a href="https://www.facebook.com/projectpros">Facebook</a>
+                    <a href="https://www.instagram.com/projectpros">Instagram</a>
+                    <a href="https://www.google.com/search?q=project+pros">Google Reviews</a>
+                    <a href="https://www.yelp.com/biz/project-pros">Yelp Reviews</a>
+                    <a href="/sitemap.xml">Sitemap</a>
